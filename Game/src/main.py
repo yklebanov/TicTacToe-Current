@@ -1,7 +1,7 @@
 # Project Name: Tic-Tac-Toe
 # Author: Yasha Klebanov
 
-from .Board import Board
+from Game.src.Board import Board
 currentBoard = Board()
 # Validates user's input
 def valid_input(input):
