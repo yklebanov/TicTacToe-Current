@@ -1,7 +1,13 @@
 # Project Name: Tic-Tac-Toe
 # Author: Yasha Klebanov
 
-from Game.src.Board import Board
+#commented out cus it was not wokring for me
+#from Game.src.Board import Board
+
+#use this one for me cus other one was not working
+from Board import Board
+
+
 currentBoard = Board()
 # Validates user's input
 def valid_input(input):
@@ -23,7 +29,7 @@ while game_over == False:
             flag = False
     user_input = int(user_input)
     currentBoard.setToken(user_input, player)
-    currentBoard.print_board()
+    currentBoard.print_board(numbered=True)
     #board[user_input-1] = player
     #print_board()
 
@@ -37,6 +43,6 @@ while game_over == False:
             flag = False
     user_input = int(user_input)
     currentBoard.setToken(user_input, player)
-    currentBoard.print_board()
+    currentBoard.print_board(numbered=True)
     #board[user_input - 1] = player
     #print_board()
