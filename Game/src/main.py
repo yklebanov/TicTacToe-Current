@@ -1,10 +1,6 @@
 # Project Name: Tic-Tac-Toe
 # Author: Yasha Klebanov
 
-#commented out cus it was not wokring for me
-#from Game.src.Board import Board
-
-#use this one for me cus other one was not working
 from Board import Board
 
 
@@ -19,6 +15,7 @@ def valid_input(input):
 # Main game Loop
 game_over = False
 while game_over == False:
+    currentBoard.print_board(numbered=True)
     # Player X's Turn
     player = "X"
     user_input = 0
@@ -29,7 +26,7 @@ while game_over == False:
             flag = False
     user_input = int(user_input)
     currentBoard.setToken(user_input, player)
-    currentBoard.print_board(numbered=True)
+    currentBoard.print_board(numbered=False)
     #board[user_input-1] = player
     #print_board()
 
@@ -43,6 +40,6 @@ while game_over == False:
             flag = False
     user_input = int(user_input)
     currentBoard.setToken(user_input, player)
-    currentBoard.print_board(numbered=True)
+    currentBoard.print_board(numbered=False)
     #board[user_input - 1] = player
     #print_board()
