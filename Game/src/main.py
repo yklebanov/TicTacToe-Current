@@ -3,7 +3,6 @@
 
 from Board import Board
 
-
 currentBoard = Board()
 # Validates user's input
 def valid_input(input):
@@ -14,8 +13,9 @@ def valid_input(input):
 
 # Main game Loop
 game_over = False
+print("Welcome! Down below is a the detailed gameboard.")
+currentBoard.print_board(numbered=True)
 while game_over == False:
-    currentBoard.print_board(numbered=True)
     # Player X's Turn
     player = "X"
     user_input = 0
@@ -35,7 +35,7 @@ while game_over == False:
     user_input = 0
     flag = True
     while flag:
-        user_input = input("Where do you want to move? ")
+        user_input = input("Where do you want to move? (O) ")
         if valid_input(user_input):
             flag = False
     user_input = int(user_input)

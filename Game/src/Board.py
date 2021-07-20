@@ -1,6 +1,5 @@
 # Board.py - Prints the board, showing the numbers of the positions
 
-# positions = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 class Board:
     board = None
     # Constructor Class --> Set Board to Default
